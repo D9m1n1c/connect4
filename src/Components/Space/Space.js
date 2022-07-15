@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Space.css";
+import style from "./Space.module.css";
 
 function Hole() {
   const [playerID, setPlayerID] = useState(0);
@@ -9,7 +9,7 @@ function Hole() {
   };
 
   return (
-    <button id="circle" onClick={DropToken}>
+    <button id={style.circle} onClick={DropToken}>
       {playerID}
     </button>
   );
