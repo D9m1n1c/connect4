@@ -9,7 +9,7 @@ function Hole() {
   };
 
   return (
-    <button id={style.circle} onClick={DropToken}>
+    <button className={style.circle} onClick={DropToken}>
       {playerID}
     </button>
   );
