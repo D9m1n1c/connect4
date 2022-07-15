@@ -4,12 +4,8 @@ import style from "./Space.module.css";
 function Hole() {
   const [playerID, setPlayerID] = useState(0);
 
-  const DropToken = () => {
-    setPlayerID(1);
-  };
-
   return (
-    <button className={style.circle} onClick={DropToken}>
+    <button className={style.circle} onClick={() => setPlayerID(1)}>
       {playerID}
     </button>
   );
