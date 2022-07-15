@@ -79,7 +79,7 @@ body {
   left: 16px;
 }
 
-.holes {
+.board {
   display: grid;
   background-color: #fff;
   width: fit-content 5rem;

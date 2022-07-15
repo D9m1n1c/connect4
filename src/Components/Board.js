@@ -10,30 +10,35 @@ function Board(props) {
     const col = [];
 
     for (let j = 0; j < y; j++) {
-      const row = [<Hole />];
+      const row = (
+        <div className="holes">
+          <Hole key={`hole${i}${j}`} />
+        </div>
+      );
       col.push(row);
     }
-
-    showBoard.push(col);
-    console.log(showBoard);
+    showBoard.push(
+      <div className="grid" key={`grid${i}`}>
+        {col}
+      </div>
+    );
   }
+  console.log(showBoard);
+
   return (
-    <div id="" className="holes">
+    <div key={`board`} className="board">
       {showBoard}
     </div>
   );
-
-  // return (
-  //   <div>
-  //     {board.map((row, idx) => (
-  //       <div key={idx}>{row}</div>
-  //     ))}
-  //   </div>
-  // );
 }
 
 export default Board;
 /*
+
+    <div id="" className="holes">
+      {showBoard}
+    </div>
+
 
 <div class=board>
   <div class=row>
