@@ -10,17 +10,6 @@ body {
   background: rgba(48, 56, 83, 1);
 }
 
-#circle {
-  display: grid;
-  grid-template-rows: repeat(6);
-  place-items: center;
-  justify-content: center;
-  background: lightblue;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-}
-
 #game-scene {
   width: 100%;
   position: relative;

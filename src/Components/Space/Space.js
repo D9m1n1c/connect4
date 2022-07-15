@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../App.css";
+import "./Space.css";
 
 function Hole() {
   const [playerID, setPlayerID] = useState(0);
