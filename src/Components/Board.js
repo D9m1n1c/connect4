@@ -1,4 +1,4 @@
-import Hole from "./Space/Space";
+import Hole from "./Space/Space.tsx";
 import "../App.css";
 
 function Board(props) {

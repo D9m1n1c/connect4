@@ -1,7 +1,7 @@
 import { useState } from "react";
 import style from "./Space.module.css";
 
-function Hole() {
+const Hole: React.FC = () => {
   const [playerID, setPlayerID] = useState(0);
 
   return (
