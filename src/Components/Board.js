@@ -9,6 +9,10 @@ function Board(props) {
   for (let i = 0; i < x; i++) {
     const col = [];
 
+    const clickColumn = () => {
+      console.log(`clicked column${i}`);
+    };
+
     for (let j = 0; j < y; j++) {
       const row = (
         <div className="holes">
@@ -18,7 +22,7 @@ function Board(props) {
       col.push(row);
     }
     showBoard.push(
-      <div className="grid" key={`grid${i}`}>
+      <div className="columns" key={`column${i}`} onClick={clickColumn}>
         {col}
       </div>
     );
@@ -75,4 +79,15 @@ export default Board;
   [X, X, X, '', '']
   [X, X, X, '', '']
 ]
+
+current html
+<div class="board">
+  <div class="grid">
+  <div class="grid">
+  <div class="grid">
+    <div class="hole">
+    <div class="hole">
+    <div class="hole">
+      <button>
+
 */

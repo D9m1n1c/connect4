@@ -4,12 +4,12 @@ import "../App.css";
 function Hole() {
   const [playerID, setPlayerID] = useState(0);
 
-  const DropToken = () => {
+  const updateButton = () => {
     setPlayerID(1);
   };
 
   return (
-    <button id="circle" onClick={DropToken}>
+    <button id="circle" onClick={updateButton}>
       {playerID}
     </button>
   );

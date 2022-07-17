@@ -82,7 +82,7 @@ body {
 .board {
   display: grid;
   background-color: #fff;
-  width: fit-content 5rem;
+  /* width: fit-content 5rem; */
   grid-template-columns: repeat(7, 4.5rem);
   place-items: center;
   justify-content: center;
